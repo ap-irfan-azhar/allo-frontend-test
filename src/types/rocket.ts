@@ -21,16 +21,9 @@ export interface NewRocket {
 
 export interface RocketState {
   rockets: Rocket[];
-  filteredRockets: Rocket[];
   loading: boolean;
   error: string | null;
   filter: string;
-  pagination: {
-    page: number;
-    limit: number;
-    totalDocs: number;
-    totalPages: number;
-  };
 }
 
 export interface PaginationResponse<T> {

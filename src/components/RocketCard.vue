@@ -12,7 +12,7 @@
       class="rocket-image"
     >
       <template v-slot:placeholder>
-        <v-row class="fill-height ma-0" align="center" justify="center">
+        <v-row class="fill-height min-w-20 ma-0" align="center" justify="center">
           <v-progress-circular indeterminate color="grey-lighten-5"/>
         </v-row>
       </template>
@@ -67,6 +67,7 @@ const navigateToDetail = () => {
 .rocket-card {
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  width: 18em;
 }
 
 .rocket-card:hover {
